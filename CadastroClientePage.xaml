@@ -1,0 +1,42 @@
+
+
+
+
+
+
+<ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10">
+            <Button Text="voltar"
+                    Clicked="VoltarClicked"
+                    BackgroundColor="Orange"
+                    TextColor="Black"/>
+            <Label Text="Cadastrar cliente"
+                   FontSize="20"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,20"/>
+            <Label Text="ID:" />
+            <Label x:Name="IdLabel"/>
+            <Label Text="Nome:" />
+            <Entry Placeholder="Digite o nome" x:Name="NomeEntry"/>
+            <Label Text="Sobrenome:" />
+            <Entry Placeholder="Digite o sobrenome" x:Name="SobrenomeEntry"/>
+            <Label Text="Telefone:" />
+            <Entry Placeholder="Digite o telefone" x:Name="TelefoneEntry"/>
+
+            <Label Text="Estado"/>
+            <Picker x:Name="pickerEstado"
+                    ItemDisplayBinding="{Binding Nome}"/>
+
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarClienteClicked"/>
+                <Button Text="SALVAR DADOS"
+                        TextColor="Green"
+                        BackgroundColor="Transparent"
+                        Clicked="OnSalvarDadosClicked"/>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

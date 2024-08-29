@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LiteDBExample.MainPage">
+
+            <Label Text="Cliente"
+            x:Name="Pedro"
+                   TextColor="Orange"
+                   Margin:"0, 20, 0, 20"
+                   BackgroundColor="AliceBlue"
+                  FontSize="20"/>
+          <Button Text="Cadastrar"
+                  Clicked="OnCounterClicked"/>
+                  <Label Text="Telefone"
+                        x:Name="09632454678"
+                        TextColor="Orange"
+                        margin
+                        FontSize="20"/>
+                        <Label Text="Sobrenome"
+                            x:Name="Batista"
+                            TextColor="Orange"
+                            FontSize="20"/>
+
+
+                  
+
+</ContentPage>
