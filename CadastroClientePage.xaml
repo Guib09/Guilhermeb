@@ -1,19 +1,22 @@
-
-
-
-
-
-
 <ScrollView>
         <VerticalStackLayout Padding="20" Spacing="10">
             <Button Text="voltar"
                     Clicked="VoltarClicked"
                     BackgroundColor="Orange"
                     TextColor="Black"/>
-            <Label Text="Cadastrar cliente"
+            <Label Text="Cadastro de Matéria Prima"
                    FontSize="20"
                    HorizontalOptions="Center"
                    Margin="0,20,0,20"/>
+                   <Label Text="Fornecedor"
+                         x:Name="Joao"
+                         TextColor="Orange"
+                         Margin="20"/>
+                         <Button="Cadastrar"
+                               Clicked="Cadastrado"
+                               BackgroundColor="Blue"
+                               TextColor="Orange"/>
+
             <Label Text="ID:" />
             <Label x:Name="IdLabel"/>
             <Label Text="Nome:" />
@@ -36,6 +39,28 @@
                         TextColor="Green"
                         BackgroundColor="Transparent"
                         Clicked="OnSalvarDadosClicked"/>
+                 <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                <Button Text="Limpar"
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarDadosClicked"/>
+                        Clicked="OnApagarClienteClicked"/>
+                <Button Text="SALVAR DADOS"
+                        TextColor="Green"
+                        BackgroundColor="Transparent"
+
+
+
+
+
+
+
+
+
+
+
+
             </HorizontalStackLayout>
         </VerticalStackLayout>
     </ScrollView>
